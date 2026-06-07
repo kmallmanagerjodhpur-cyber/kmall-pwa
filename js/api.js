@@ -14,7 +14,7 @@ window.API = (() => {
     try {
       const res = await fetch(url, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'text/plain' },
         body: JSON.stringify({ action, ...payload }),
       });
       const data = await res.json();
